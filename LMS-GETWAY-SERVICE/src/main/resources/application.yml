@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: LMS-GETWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: ACQUISITION
+          uri: lb://ACQUISITION
+          predicates:
+            - Path=/acquisition/**
+          
+server:
+  port: 8086
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true

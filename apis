@@ -1,0 +1,44 @@
+URLs for each API endpoint appended with `http://localhost:8085/`:
+
+**LOGIN** : http://localhost:8085/api/auth/login
+
+**POST** API : json data below  
+{
+"username":"vinayak",
+"password":"password"
+}
+
+
+1. **Acquisition**:
+   - Create: `POST http://localhost:8085/acquisition/create-acquisition`
+   - View: `GET http://localhost:8085/acquisition/view-acquisitions`
+   - Search: `GET http://localhost:8085/acquisition/search-acquisition/{id}`
+   - Delete: `DELETE http://localhost:8085/acquisition/delete-acquisition/{id}`
+
+2. **Review**:
+   - Create: `POST http://localhost:8085/review/create-review`
+   - View: `GET http://localhost:8085/review/view-reviews`
+   - Search: `GET http://localhost:8085/review/search-review/{id}`
+   - Delete: `DELETE http://localhost:8085/review/delete-review/{id}`
+
+3. **Members**:
+   - Create: `POST http://localhost:8085/members/create-member`
+   - View: `GET http://localhost:8085/members/view-members`
+   - Search: `GET http://localhost:8085/members/search-members/{id}`
+   - Delete: `DELETE http://localhost:8085/members/delete-member/{id}`
+
+4. **Circulation**:
+   - Create: `POST http://localhost:8085/circulation/create-circulation`
+   - View: `GET http://localhost:8085/circulation/view-circulations`
+   - Search: `GET http://localhost:8085/circulation/search-circulation/{id}`
+   - Delete: `DELETE http://localhost:8085/circulation/delete-circulation/{id}`
+
+5. **Catalogue**:
+   - Create: `POST http://localhost:8085/catalogue/create-catalogue`
+   - View: `GET http://localhost:8085/catalogue/view-catalogues`
+   - Search: `GET http://localhost:8085/catalogue/search-catalogue/{id}`
+   - Delete: `DELETE http://localhost:8085/catalogue/delete-catalogue/{id}`
+
+
+
+These URLs should cover all the basic CRUD operations for each entity in your system, appended with the base URL `http://localhost:8085/`.
